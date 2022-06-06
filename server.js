@@ -8,7 +8,7 @@ const connectDB=require('./server/database/connection')
 const { dirname } = require("path");
 
 dotenv.config( { path : 'config.env' } )
-const PORT=process.env.PORT||8080;
+const PORT=process.env.PORT;
 
 //log request
 app.use(morgan('tiny'));
